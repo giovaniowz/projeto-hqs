@@ -1,0 +1,100 @@
+/* Configurações básicas */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4a148c; /* Roxo HQ */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Navegação */
+nav {
+    background: #311b92; /* Roxo mais escuro */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os cards de quadrinhos */
+.quadrinhos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 20px;
+    justify-content: center;
+}
+
+.quadrinho-card {
+    flex: 1 1 200px; /* Cresce e encolhe, com base mínima de 200px */
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.quadrinho-card img {
+    width: 100%;
+    max-width: 150px; /* Limita o tamanho da capa */
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Query simples para telas menores */
+@media (max-width: 600px) {
+    .quadrinhos-container {
+        flex-direction: column;
+    }
+}
